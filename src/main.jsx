@@ -1,10 +1,10 @@
 import { createRoot } from "react-dom/client";
 
+import Sample5 from "./event-sample/Sample5";
 import "./index.css";
-import EventSample2 from "./event-sample/EventSample2";
 
 createRoot(document.getElementById("root")).render(
   <>
-    <EventSample2 />
+    <Sample5 />
   </>,
 );
