@@ -18,19 +18,14 @@
   ],
   "member": [
     {
-      "id": "2",
-      "email": "b@b.net",
-      "pw": "123"
-    },
-    {
       "id": "fb63",
-      "email": "a@b.net",
+      "email": "a@c.net",
       "pw": "tytryrty"
     },
     {
-      "id": "7963",
-      "email": "",
-      "pw": ""
+      "id": "53cd",
+      "email": "sdsad@aa.mnet",
+      "pw": "sad"
     }
   ]
 }
