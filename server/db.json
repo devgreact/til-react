@@ -1,19 +1,36 @@
 {
   "todos": [
     {
+      "id": "b670",
+      "title": "집으로",
+      "content": "슬슬 갈 준비 합시다!!!"
+    }
+  ],
+  "diaries": [
+    {
+      "title": "즐거운 하루3",
+      "date": "2024-12-03",
+      "content": "오늘은 정말 행복한 하루 입니다. 춥네요2..ㅎㅎ",
+      "mood": "2",
+      "weather": "3",
+      "id": "a9ec"
+    }
+  ],
+  "member": [
+    {
       "id": "2",
-      "title": "postman 공부",
-      "content": "사용법 공부하자"
+      "email": "b@b.net",
+      "pw": "123"
     },
     {
-      "id": "1c78",
-      "title": "잘되시나요?",
-      "content": "테스트"
+      "id": "fb63",
+      "email": "a@b.net",
+      "pw": "tytryrty"
     },
     {
-      "id": "8232",
-      "title": "잘되시나요?",
-      "content": "테스트햬햬햬햬"
+      "id": "7963",
+      "email": "",
+      "pw": ""
     }
   ]
 }
