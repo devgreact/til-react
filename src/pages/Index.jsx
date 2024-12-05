@@ -5,5 +5,4 @@ function Index({ title, year }) {
     </div>
   );
 }
-
 export default Index;

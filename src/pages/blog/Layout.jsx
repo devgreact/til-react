@@ -3,9 +3,9 @@ import { Outlet } from "react-router-dom";
 function Layout() {
   return (
     <div>
-      <div style={{ backgroundColor: "hotpink" }}>로컬메뉴</div>
+      <div>로컬메뉴</div>
       <div>
-        <h2> Outlet 자리 </h2>
+        <h2> Outlet 자리</h2>
         <div
           style={{
             backgroundColor: "yellowgreen",
