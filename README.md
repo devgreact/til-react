@@ -679,3 +679,64 @@ const Member = () => {
 
 export default Member;
 ```
+- proxy 설정
+
+  ```jsx
+  1. package.json 에서 "proxy" : "http://192.~~"   제거
+2. vite.config.js
+
+// vite.config.js
+import { defineConfig } from "vite";
+import react from "@vitejs/plugin-react";
+
+export default defineConfig({
+  plugins: [react()],
+  server: {
+    proxy: {
+      "/api": {
+        target: "http://192.168.0.144:5214",
+        changeOrigin: true,
+        secure: false,
+      },
+    },
+  },
+});
+
+
+
+ const handleEmailAuth = async () => {
+    console.log("이메일 인증 코드 요청 시작");
+    try {
+      const response = await axios.post(
+        "/api/email-auth/send-code", // 실제 API 엔드포인트 경로
+        {
+          email: "a@a.net",
+        },
+        {
+          headers: {
+            "Content-Type": "application/json",
+          },
+        },
+      );
+      console.log("응답:", response);
+    } catch (error) {
+      console.log("에러 상세 정보:", {
+        status: error.response?.status,
+        statusText: error.response?.statusText,
+        data: error.response?.data,
+        url: error.config?.url,
+        method: error.config?.method,
+      });
+    }
+  };
+
+  const handleEmailDoubleCheck = async () => {
+    console.log("이메일 인증 코드 확인 시작");
+    try {
+      const response = await axios.get("/api/user/check-email?email=a@a.net");
+      console.log(response);
+    } catch (error) {
+      console.log(error);
+    }
+  };
+```
